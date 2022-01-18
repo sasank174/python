@@ -45,3 +45,8 @@ print()
 
 
 print(x+x)
+print("he is {}".format(x))
+
+
+x = "sasank \"is\""
+print(x)
