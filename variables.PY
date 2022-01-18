@@ -15,3 +15,14 @@ z = str(5)
 print(type(x))
 print(type(y))
 print(type(z))
+
+
+x, y, z = "Orange", "Banana", "Cherry"
+print(x,y,z)
+
+
+x = y = z = "Orange"
+print(x,y,z)
+
+x, y, z = ["apple", "banana", "cherry"]
+print(x,y,z)
