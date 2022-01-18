@@ -79,4 +79,9 @@ print("==========")
 x = memoryview(bytes(5))
 print(type(x))
 print(x)
-print("==========")
+
+
+print("==========================================")
+
+x = 200.0
+print(isinstance(x, int)) # false
