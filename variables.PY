@@ -1,3 +1,10 @@
+myvar = "John"
+my_var = "John"
+_my_var = "John"
+myVar = "John"
+MYVAR = "John"
+myvar2 = "John"
+
 a = 5
 
 x = int(5)
