@@ -9,3 +9,20 @@ print(lis)
 print(lis[2])
 print(lis[2:])
 print(len(lis))
+print("sasank" in lis)
+
+lis.append("appended")
+lis.insert(1,"insert")
+lis.extend(lis)
+lis2 = lis+lis
+
+
+lis.remove("appended")  # error if not exist
+lis.pop()
+
+lis.reverse()
+
+lis2 = lis.count(10)
+lis2 = lis.copy()
+print(lis2)
+
