@@ -4,3 +4,7 @@ l.sort()
 print(l)
 l.sort(reverse=True)
 print(l)
+
+
+x = sorted(l)
+x = sorted(l,reverse=True)

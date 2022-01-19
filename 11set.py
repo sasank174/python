@@ -9,7 +9,7 @@ s.update(["ha","ha1"])
 
 s.remove("ha") # will raise error
 s.discard("ha") # no error
-s.pop("ha")
+s.pop()
 
 print(*s,sep=",")
 print("asa" in s)
