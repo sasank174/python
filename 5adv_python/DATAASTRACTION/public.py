@@ -1,12 +1,12 @@
 
-'''
-   1.In Python there is not keyword "public"
-   2.public member are without any __
-   3.by default all members of the class is public
-   4.public members can used in the class | inhertied classes |
-      outside of class '''
 
 class Super:
+    '''
+    1.In Python there is not keyword "public"\n
+    2.public member are without any __\n
+    3.by default all members of the class is public\n
+    4.public members can used in the class | inhertied classes |
+        outside of class '''
     def method1(self):
         self.x=10  #public
         print("Mtd-1 of Super ")

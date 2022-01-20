@@ -1,11 +1,11 @@
 
-'''
-  > protected keyword is not existed
-  > in Python protected members are declared using _variable
-  > protected members can used with in the class |
-     protected members are inherited but protected members can't be accessed outside of cls'''
 
 class Super:
+    '''
+    > protected keyword is not existed
+    > in Python protected members are declared using _variable
+    > protected members can used with in the class |
+        protected members are inherited but protected members can't be accessed outside of cls'''
     def __init__(self):
         self._x=10 #protected
         print("From Super protected x is : ",self._x)
