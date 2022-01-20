@@ -2,11 +2,11 @@ import time
 f=open("data4","w")
 
 print("Enter U R Data Press * For Exit ")
-data=input()   #chinni
+data=input()
 
-while data!='*':
+while data!='end':
     f.write(data+"\n")
-    data=input()  #*
+    data=input()
 
 time.sleep(1)
 f.close()
