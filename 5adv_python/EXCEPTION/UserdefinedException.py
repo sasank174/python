@@ -8,7 +8,7 @@ class MyLoginError(Exception):
 username=input("Enter username ")
 password=input("Enter password ")
 
-if username=="sssit" and password=="kphb":
+if username=="sasank" and password=="sasank":
     print("Valid User  ....!!! ")
 else:
     try:
