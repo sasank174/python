@@ -1,6 +1,7 @@
 
 #cmd2.py
 import sys
+# python cmd2.py 10 12
 
 print("No.of.Command Line Arguments : ", len( sys.argv ) )
 print("File name is : ",sys.argv[0])   #Filename
