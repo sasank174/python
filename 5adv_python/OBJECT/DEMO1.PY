@@ -22,6 +22,24 @@ print("C is the sub class of object ? : ",issubclass(C,object) ) #True
 print("B is the sub class of A ? : ",issubclass(B,A) )#True
 print("A is the sub class of B ? : ",issubclass(A,B)) #False
 
+print("-"*20)
+
+class A:
+    pass
+
+class B(A):
+    pass
+
+class C():
+    pass
+
+print("A is the sub class of object ? : ",issubclass(A,object) ) #True
+print("B is the sub class of object ? : ",issubclass(B,object) ) #True
+print("C is the sub class of object ? : ",issubclass(C,object) ) #True
+
+print("B is the sub class of A ? : ",issubclass(B,A) )#True
+print("A is the sub class of B ? : ",issubclass(A,B)) #False
+
 
 
 
