@@ -6,7 +6,7 @@
 
     Note: if we define any abstract class with only abstract methods then that
                abstract class is acts as an interface '''    " Exception Handling"
-                                                                                                      O
+
 
 from abc import ABC,abstractmethod
 class Super(ABC):
