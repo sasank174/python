@@ -11,4 +11,4 @@ class Sample:
 #calling
 s=Sample()
 s.method1(10)
-s.method1( 123)
+s.method1(123)
