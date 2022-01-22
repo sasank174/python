@@ -39,8 +39,6 @@ class LinkedList:
 		p.next = t
 		t.next = q
 
-		
-	
 	def count(self):
 		count = 0
 		max = min = None
