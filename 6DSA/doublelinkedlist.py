@@ -2,19 +2,12 @@ class Node:
 	def __init__(self, data):
 		self.data = data
 		self.next = None
+		self.prev = None
 
 class LinkedList:
 	def __init__(self):
 		self.head = None
 	
-	def reverse(self):
-		p = self.head
-		q=r=None
-		while p:
-			r,q = q,p
-			p = p.next
-			q.next = r
-		self.head = q
 	
 	def append(self,value):
 		t = Node(value)
@@ -24,10 +17,12 @@ class LinkedList:
 		temp = self.head
 		while temp.next:temp = temp.next
 		temp.next = t
+		t.prev = temp 
 	
 	def push(self,value):
 		t = Node(value)
 		t.next = self.head
+		self.head.prev = t
 		self.head = t
 	
 	def insertAt(self,pos,value):
@@ -46,8 +41,10 @@ class LinkedList:
 			q = p.next
 			count+=1
 		p.next = t
+		t.prev = p
 		t.next = q
-
+		q.prev = t
+	
 	def count(self):
 		count = 0
 		max = min = None
@@ -61,21 +58,6 @@ class LinkedList:
 		print("count = ",count)
 		if max != None:
 			print("Max is: {}, Min is: {}".format(max,min))
-		
-	def delete(self,value):
-		temp = self.head
-		if self.head.data == value:
-			self.head = self.head.next
-			print("deleted " + str(value))
-			return 
-		while temp.next:
-			if temp.next.data == value:
-				temp.next = temp.next.next
-				print("deleted " + str(value))
-				return 
-			else:
-				temp = temp.next
-		print(str(value) +" element not found")
 
 	def printList(self):
 		temp = self.head
@@ -92,7 +74,6 @@ if __name__=='__main__':
 	ll.push(50)
 	ll.insertAt(4,150)
 	ll.count()
-	ll.delete(10)
 
 
 	ll.printList()
