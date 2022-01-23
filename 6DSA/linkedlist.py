@@ -7,6 +7,15 @@ class LinkedList:
 	def __init__(self):
 		self.head = None
 	
+	def reverse(self):
+		p = self.head
+		q=r=None
+		while p:
+			r,q = q,p
+			p = p.next
+			q.next = r
+		self.head = q
+	
 	def append(self,value):
 		t = Node(value)
 		if self.head is None:
